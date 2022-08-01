@@ -27,7 +27,7 @@ main{
     
 }
 
-.header-img{
+#header-img{
     width: 100px;
     margin: 0 30px 0 30px;
     background-color:rgb(241, 143, 159);
@@ -45,6 +45,24 @@ main{
     text-shadow: 0 0 4px rgb(0, 0, 0);
     padding: 2%;
     text-align: center;
+}
+
+@keyframes titulo{
+
+    0%{ opacity:0;
+
+    }
+
+    100%{ opacity:1;
+
+    }
+}
+
+.header h4 {
+
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .header a{
@@ -106,7 +124,12 @@ a{
     width: 40%;
     padding-top: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    margin: 2%;   
+    margin: 2%;  
+}
+
+.contenido_info:hover{
+
+    background-color:rgb(241, 143, 159) ;
 }
 
 .contenido_info h1{
@@ -114,6 +137,7 @@ a{
     font-size: xx-large;
     text-align: center;
 }
+
 
 .contenido_info h2{
     padding-bottom: 20px;
@@ -136,11 +160,19 @@ a{
     justify-content:center;
     align-items: center;
     background-color:rgb(241, 143, 159);
+    
 }
+
+
 
 .logos_redes img {
 
     width: 10%;
+}
+
+.logos_redes img:hover{
+
+    transform: scale(2,2);
 }
 
 
@@ -175,7 +207,7 @@ a{
     margin: 2%;
 }
 
-.conocenos h2{
+#conocenos h2{
 
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -234,6 +266,12 @@ a{
     
    }
 
+   .nivel:hover{
+
+    background-color:rgb(241, 143, 159) ;
+
+   }
+
    .nivel ul{
 
     list-style: none; 
@@ -247,7 +285,7 @@ a{
 
    .nivel p{
     font-weight: bold;
-    padding-bottom:5% ;
+    padding:5% ;
     font-size: large;
    }
 
@@ -278,6 +316,7 @@ a{
     }
 
     form {
+        display: grid;
         width: 50%;
         padding: 5%;
         background-color: rgb(236, 209, 213);
@@ -285,7 +324,7 @@ a{
         margin: 2%;
       }
 
-      .mapa{
+      #mapa{
         width: 50%;
         background-color: rgb(236, 209, 213);
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -390,7 +429,7 @@ a{
     .contacto form {
         width: 90%;
     }
-    .mapa{
+    #mapa{
         width: 100%;
     }
 

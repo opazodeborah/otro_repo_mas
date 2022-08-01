@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Instituto PAD</title>
 </head>
 <body>
 
   <header class="header">
 
-  <img class="header-img" src="../img/logo-nuevo.png" alt="logo">
+    <img id= "header-img" class="animate__animated animate__zoomIn" src="../img/logo-nuevo.png" alt="logo">
   <h4>Instituto PAD</h4>
  
   <nav>
@@ -42,7 +44,7 @@
 
     <section class="contacto">
     
-    <form action="">
+    <form action class data-aos="flip-left" data-aos-easing="ease-out-cubic"data-aos-duration="3000">
 
         Nombre
        <input type="text">
@@ -74,7 +76,7 @@
 
        </form>
 
-       <div class="mapa">
+       <div id="mapa" class data-aos="flip-right" data-aos-easing="ease-out-cubic"data-aos-duration="3000">
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.016285891364!2d-57.5432108!3d-38.000080600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1a9704291f%3A0xc21a7e4c6b18ff!2sCorrientes%201598%2C%20B7600EBH%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656952318627!5m2!1ses-419!2sar" width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       </section>
@@ -97,6 +99,12 @@
              </div>
         
       </footer>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
 
     
 </body>
