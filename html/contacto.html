@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,21 +18,25 @@
   <header class="header">
 
     <img id= "header-img" class="animate__animated animate__zoomIn" src="../img/logo-nuevo.png" alt="logo">
-  <h4>Instituto PAD</h4>
+  
  
-  <nav>
-      
-  <ul class="header-menu">
-
-    <li> <a href="../index.html">Inicio</a></li>
-    <li> <a href="historia.html">Historia</a></li>
-    <li><a href="niveles.html">Niveles</a></li>
-    <li><a href="galeria.html">Galeria</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-    
-</ul>
-
-</nav>
+    <nav class="navbar navbar-expand-lg bg-rgb(241, 143, 159)">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Instituto PAD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            <a class="nav-link" href="historia.html">Historia</a>
+            <a class="nav-link" href="niveles.html">Niveles</a>
+            <a class="nav-link" href="galeria.html">Galeria</a>
+            <a class="nav-link active" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
 </header>
 
@@ -41,58 +46,70 @@
             <img src="../img/banner-interno-sobre.jpg" alt="banner">
             <h2> Contacto </h2>
           </div>
-
-    <section class="contacto">
-    
-    <form action class data-aos="flip-left" data-aos-easing="ease-out-cubic"data-aos-duration="3000">
-
-        Nombre
-       <input type="text">
-    
-       Email
-       <input type="email"> 
-       
-    
-       Telefono
-       <input type="number">
-       
-    
-    
-       Selecciona la opcion de tu interés
-       
-       <select name="" id="">
-
-        <option value="">Inscribirme</option>
-        <option value="">Mas información por Email</option>
-        <option value="">Que un representante me llame</option>
-        <option value="">Pactar una cita</option>
-        
-        
-        </select>
-      
-
-      
-       <input type="submit" value="Enviar formulario">
-
-       </form>
+          <section class="contacto">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Deborah" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Garcia" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Email</label>
+              <input type="email" class="form-control" id="validationCustom02" placeholder="name@example.com" required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Interes</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Inscribirme</option>
+                <option>Mas info por Email</option>
+                <option>Que un representante me llame</option>
+                <option>Pactar una cita</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Telefono</label>
+              <input type="number" class="form-control" id="validationCustom05" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Acepto los terminos y condiciones
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
 
        <div id="mapa" class data-aos="flip-right" data-aos-easing="ease-out-cubic"data-aos-duration="3000">
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.016285891364!2d-57.5432108!3d-38.000080600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1a9704291f%3A0xc21a7e4c6b18ff!2sCorrientes%201598%2C%20B7600EBH%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656952318627!5m2!1ses-419!2sar" width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      </section>
+    </section>
+
+
       </main>
+
        <footer class="redes_sociales">
 
         <div class="redes">
         <h3> Seguinos en nuestras redes sociales</h3>  
             </div>
 
-        <div class="logos_redes">
-        <img  src="../img/facebook.png" alt="Logo facebook">
-        <img  src="../img/instagram.png" alt="Logo instagram">
-        <img  src="../img/youtube.png" alt="Logo youtube">
-        <img  src="../img/whatsapp.png" alt="Logo whatsapp">
-             </div>
+            <div class="logos_redes">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-whatsapp"></i>
+                 </div>
 
         <div class="ubicacion">
           <h3>Visitanos en Avenida Corrientes 1598</h3>
@@ -104,6 +121,8 @@
       <script>
         AOS.init();
       </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 
     
