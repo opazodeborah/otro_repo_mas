@@ -187,9 +187,8 @@ background-color:rgb(241, 143, 159);
 .logos_redes {
 display: flex;
 width: 33.33%;
-justify-content:center;
+justify-content:space-between;
 align-items: center;
-background-color:rgb(241, 143, 159);
 
 }
 
@@ -411,6 +410,9 @@ form.row.g-3.needs-validation{
 
   @media screen and (max-width: 600px) {
     
+    .row{
+        display: grid;
+    }
     .contenido_principal{
             display: grid;
             max-width: 100%;
@@ -515,3 +517,18 @@ width: 90%;
     }  
 }
 
+.row{
+    
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+}
+
+.derechos_reservados{
+text-align: center;
+}
+
+footer{
+    background-color: rgb(241, 143, 159);
+    margin-top: 5%;
+}
