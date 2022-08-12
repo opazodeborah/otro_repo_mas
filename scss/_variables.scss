@@ -1,0 +1,22 @@
+$rosa-claro:rgb(236, 209, 213);
+$rosa-oscuro:rgb(241, 143, 159);
+
+a.btn.btn-primary {
+
+    color: black;
+    --bs-btn-border-color: none;
+}
+
+.boton_inscribite{
+
+    padding: 15px 15px;
+    background-color:$rosa-oscuro;
+    border-radius: 0.6666666667rem;
+    display: flexbox;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 20% 5% 20%;
+    cursor: pointer;
+    }
+

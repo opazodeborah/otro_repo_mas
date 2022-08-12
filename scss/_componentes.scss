@@ -1,0 +1,66 @@
+
+.accordion-flush .accordion-item .accordion-button {
+    background-color:$rosa-oscuro;
+    display: flex;
+  }
+
+
+.banner_interno{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+     h2{
+            position: absolute;
+            color: #FFF;
+            font-size: 250%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+     }
+
+    }
+
+    .card {
+
+        margin: 2%;
+        background-color: $rosa-oscuro;
+        text-align: center;
+    
+    }
+
+  
+        form.row.g-3.needs-validation{
+            width: 50%;
+            padding: 5%;
+            background-color: $rosa-claro;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            margin: 2%;
+          }
+        
+          #mapa{
+            width: 50%;
+            background-color: $rosa-claro;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            margin: 2%;
+        }
+        
+          input[type=submit] {
+            float: right;
+            background-color:$rosa-oscuro;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border-radius: 4px;
+            cursor: pointer;
+          }

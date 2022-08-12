@@ -1,0 +1,78 @@
+
+footer{
+    background-color: $rosa-oscuro;
+    margin-top: 5%;
+}
+
+.bi-facebook {
+
+    color: rgb(67, 67, 158);
+}
+
+.bi-instagram{
+
+    color:rgb(174, 89, 89)
+}
+
+.bi-youtube{
+
+    color:red
+}
+
+.bi-whatsapp{
+
+    color:green;
+}
+
+.redes_sociales{
+
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding: 32px;
+background-color:$rosa-oscuro;
+}
+
+.logos_redes {
+display: flex;
+width: 33.33%;
+justify-content:space-between;
+align-items: center;
+
+   i{
+
+    font-size: xx-large;
+    margin-right: 3%;
+    }
+
+}
+
+.logos_redes img {
+
+width: 10%;
+
+ &:hover{
+
+    transform: scale(2,2);
+    }
+    
+}
+
+.redes{
+
+width: 33.33%;
+text-align: center;
+font-size: 15px;
+
+}
+
+.row{
+    
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+}
+
+.derechos_reservados{
+text-align: center;
+}
