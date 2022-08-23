@@ -1,76 +1,63 @@
-
-footer{
+.py-5{
     background-color: $rosa-oscuro;
     margin-top: 5%;
 }
+.redes_sociales{
+@extend .py-5;
+display: flex;
+justify-content:space-around;
+align-items: center;
+}
+
+.logos_redes {
+    @extend .redes_sociales;
+   i{
+
+    margin-right: 20%;
+    }
+    .bi {
+
+        width: 10%;
+        
+         &:hover{
+        
+            transform: scale(2,2);
+            }
+
+    }
+}
+
+.row{
+    @extend .redes_sociales;
+    font-size: small;
+}
+
+@mixin logos ($tamanio-logo,$color-logo,$color-logo-hover){
+    color:$color-logo;
+    font-size: $tamanio-logo;
+    &:hover{
+        color:$color-logo-hover;
+        }
+
+}
 
 .bi-facebook {
-
-    color: rgb(67, 67, 158);
+    @include logos(xx-large,blue,white);
 }
 
 .bi-instagram{
 
-    color:rgb(174, 89, 89)
+    @include logos(x-large,pink,black);
 }
 
 .bi-youtube{
 
-    color:red
+    @include logos(xx-large,red,grey);
 }
 
 .bi-whatsapp{
 
-    color:green;
-}
-
-.redes_sociales{
-
-display: flex;
-justify-content:space-around;
-align-items: center;
-padding: 32px;
-background-color:$rosa-oscuro;
-}
-
-.logos_redes {
-display: flex;
-width: 33.33%;
-justify-content:space-between;
-align-items: center;
-
-   i{
-
-    font-size: xx-large;
-    margin-right: 3%;
-    }
-
-}
-
-.logos_redes img {
-
-width: 10%;
-
- &:hover{
-
-    transform: scale(2,2);
-    }
-    
-}
-
-.redes{
-
-width: 33.33%;
-text-align: center;
-font-size: 15px;
-
-}
-
-.row{
-    
-    justify-content: space-around;
-    align-items: center;
-    font-size: small;
+    @include logos(x-large,green,yellow);
 }
 
 .derechos_reservados{
