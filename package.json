@@ -1,7 +1,7 @@
 {
   "name": "otro_repo_mas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web de Instituto secundario, primario e inicial",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

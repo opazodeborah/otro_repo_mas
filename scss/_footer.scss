@@ -17,8 +17,7 @@ align-items: center;
     }
     .bi {
 
-        width: 10%;
-        
+     
          &:hover{
         
             transform: scale(2,2);
@@ -62,4 +61,8 @@ align-items: center;
 
 .derechos_reservados{
 text-align: center;
+}
+
+.mb-3 {
+    margin-right: 15%;
 }
