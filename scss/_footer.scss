@@ -62,7 +62,9 @@ align-items: center;
 .derechos_reservados{
 text-align: center;
 }
-
-.mb-3 {
-    margin-right: 15%;
+.py-4 {
+    margin: 10%;
 }
+.col-md-10.offset-md-1.mb-3 {
+    margin-right: 15%;
+}   
